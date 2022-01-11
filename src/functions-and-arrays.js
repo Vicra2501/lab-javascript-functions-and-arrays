@@ -1,38 +1,93 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
-
+function maxOfTwoNumbers(a, b) {
+  if (a > b) {
+    return a
+  }
+  else if (a < b){
+    return b
+  }
+  else{
+    return a, b
+  }
+}
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
 
+function findLongestWord(words) {
+  let longest = ''
+
+  if(words.length === 0){
+    return null
+  }
+
+
+  for (let i = 0; i < words.length ; i++){
+    if (words[i].length > longest.length){
+      longest = words[i] 
+  }
+}
+return longest
+console.log(longest)
+}
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(numbers) {
+  let sum = 0
 
+  if (numbers.length === 0){
+    return 0
+  }
 
+  for (let i = 0; i < numbers.length ; i++){
+     sum += numbers[i]
+  }
+  return sum
+}
 
 // Iteration #3.1 Bonus:
 function sum() {}
-
-
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+
+function averageNumbers(numbersAvg) {
+ let count = 0
+
+  if (numbersAvg.length === 0){
+    return null
+  }
+  
+  for (let i = 0; i < numbersAvg.length ; i++){
+    count += numbersAvg[i]
+  }
+  return average = (count / numbersAvg.length)
+  
+}
+
 
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(wordsArr) {
+let count = 0
+
+  if (wordsArr.length === 0){
+    return null
+ }
+ for (let i = 0; i < wordsArr.length ; i++){
+  count += wordsArr[i].length
+}
+return average = (count / wordsArr.length)
+}
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -52,7 +107,19 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(wordsUnique) {
+  let newArray = ''
+
+if (wordsUnique.length === 0){
+    return null
+ }
+ for (let i = 0; i < wordsUnique.length ; i++){
+  if (wordsUnique[i] !== newArray[i]){
+    
+  }
+}
+return average = (count / wordsArr.length)
+}
 
 
 
