@@ -108,17 +108,20 @@ const wordsUnique = [
 ];
 
 function uniquifyArray(wordsUnique) {
-  let newArray = ''
+  let newArray =[]
+  let uniquifiedArray
 
 if (wordsUnique.length === 0){
     return null
  }
  for (let i = 0; i < wordsUnique.length ; i++){
-  if (wordsUnique[i] !== newArray[i]){
-    
+   for (let j = 0; j < newArray.length; j++) {
+    if (newArray[j] === wordsUnique[i]){
+    uniquifiedArray.push(newArray[i])
   }
 }
-return average = (count / wordsArr.length)
+return newArray
+}
 }
 
 
@@ -126,7 +129,30 @@ return average = (count / wordsArr.length)
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(wordsFind) {
+  let exist = ''
+  let count = 0
+
+  if (wordsUnique.length === 0){
+    return null
+ }
+
+ for (let index = 0; index < wordsFind.length; index++) {
+   if (wordsFind[i] === exist){
+      count += 1
+   }
+   
+ }
+ if (count === 1){
+   return true
+ }
+ else if (count > 1) {
+    return true
+ }
+ else{
+   return false
+ }
+}
 
 
 
